@@ -1,0 +1,277 @@
+<div class="body-full">
+  <img id="top" src="/wp-content/uploads/2019/08/Group-338.png">
+  
+[credform]
+[cred_field field='form_messages' class='alert alert-warning']
+  <div id="example-vertical">
+    <h3>Father's Details</h3>
+    <section>
+      <h2>1. Father's Details</h2>
+      <div class="section-group">
+        
+        
+      <div class="first">
+        
+          <div class="form-group">
+            <label>First Name <span class="make-required">*</span></label>
+            [cred_field field='father-first-name' force_type='field' class='form-control' output='bootstrap' placeholder="First Name"]
+          </div>
+        
+          <div class="form-group">
+            <label>Middle Name </label>
+            [cred_field field='father-middle-name' force_type='field' class='form-control' output='bootstrap' placeholder="Middle Name"]
+          </div>
+        
+          <div class="form-group">
+            <label>Last Name</label>
+            [cred_field field='father-last-name' force_type='field' class='form-control' output='bootstrap' placeholder="Last Name"]
+          </div>
+        
+      </div>
+        
+       <div class="second">
+          <div class="form-group">
+            <label>Email ID <span class="make-required">*</span></label>
+            [cred_field field='father-email' force_type='field' class='form-control' output='bootstrap' placeholder="Email ID"]
+          </div>
+          <div class="form-group">
+            <label>Mobile Number <span class="make-required">*</span></label>
+            [cred_field field='father-mobile-number' force_type='field' class='form-control' output='bootstrap' placeholder="Mobile Number"]
+          </div>
+      </div>
+       <div class="third">
+            <div class="form-group">
+              <label>Date of Birth <span class="make-required">*</span></label>
+              [cred_field field='fathers-date-of-birth' force_type='field' class='form-control' output='bootstrap' placeholder="Date of Birth"]
+            </div>
+
+            <div class="form-group">
+              <label>Education <span class="make-required">*</span></label>
+              [cred_field field='father-education' force_type='field' class='form-control' output='bootstrap' placeholder="Select Education"]
+            </div>
+      </div>
+       <div class="fourth">
+          <div class="form-group">
+            <label>Profession Type <span class="make-required">*</span></label>
+            [cred_field field='father-profession-sub' force_type='field' class='form-control' output='bootstrap' placeholder="Select Profession Type"]
+          </div>
+          <div class="fourth-hidden">
+            <div>
+             [cred_show_group if="( $(father-profession-sub) eq 'Private' )" mode="fade-slide"]
+            <div class="form-group">
+              <label>Profession (Private) <span class="make-required">*</span></label>
+              [cred_field field='father-public' force_type='field' class='form-control' output='bootstrap' placeholder="Select Profession"]
+            </div>
+            [/cred_show_group]
+              </div>
+                <div>
+            [cred_show_group if="( $(father-profession-sub) eq 'Government' )" mode="fade-slide"]
+            <div class="form-group">
+              <label>Profession (Government) <span class="make-required">*</span></label>
+              [cred_field field='father-government' force_type='field' class='form-control' output='bootstrap' placeholder="Select Profession"]
+            </div>[/cred_show_group]
+            </div>
+            </div>
+        </div>
+         <div class="fifth">  
+            <div class="form-group">
+              <label>Company Name <span class="make-required">*</span></label>
+              [cred_field field='father-company-name' force_type='field' class='form-control' output='bootstrap' placeholder="Company Name"]
+            </div>
+             <div class="form-group">
+                <label>Annual household income in (₹) <span class="make-required">*</span></label>
+                [cred_field field='annual-household-income' force_type='field' class='form-control' output='bootstrap' placeholder="Select Household Income"]
+              </div>
+         </div>
+      </div>
+    </section>
+    
+    <h3>Mother's Details</h3>
+    <section>
+      <h2>2. Mother's Details</h2>
+      <div class="section-group">
+      <div class="first">
+        <div class="form-group">
+            <label>First Name <span class="make-required">*</span></label>
+            [cred_field field='mother-first-name' force_type='field' class='form-control' output='bootstrap' placeholder="First Name"]
+          </div>
+          <div class="form-group">
+            <label>Middle Name </label>
+            [cred_field field='mother-middle-name' force_type='field' class='form-control' output='bootstrap' placeholder="Middle Name"]
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            [cred_field field='mother-last-name' force_type='field' class='form-control' output='bootstrap' placeholder="Last Name"]
+          </div>
+      </div>
+      <div class="second">
+        <div class="form-group">
+          <label>Email ID <span class="make-required">*</span></label>
+          [cred_field field='mother-email' force_type='field' class='form-control' output='bootstrap' placeholder="Email ID"]
+        </div>
+        <div class="form-group">
+          <label>Mobile Number <span class="make-required">*</span></label>
+          [cred_field field='mother-mobile-number' force_type='field' class='form-control' output='bootstrap' placeholder="Mobile Number"]
+        </div>
+      </div>
+        <div class="third">
+             <div class="form-group">
+                <label>Date of Birth <span class="make-required">*</span></label>
+                [cred_field field='mothers-date-of-birth' force_type='field' class='form-control' output='bootstrap' placeholder="Date of Birth"]
+              </div>
+
+              <div class="form-group">
+                <label>Education <span class="make-required">*</span></label>
+                [cred_field field='mother-education' force_type='field' class='form-control' output='bootstrap' placeholder="Education"]
+              </div>
+      </div>
+      <div class="fourth">
+          <div class="form-group">
+            <label>Profession Type <span class="make-required">*</span></label>
+            [cred_field field='mother-profession-type' force_type='field' class='form-control' output='bootstrap' placeholder="Select Profession Type"]
+          </div>
+          <div>
+            <div>
+            [cred_show_group if="( $(mother-profession-type) eq 'Private' )" mode="fade-slide"]
+            <div class="form-group">
+              <label>Profession (Private) <span class="make-required">*</span></label>
+              [cred_field field='mothers-profession-private' force_type='field' class='form-control' output='bootstrap' placeholder="Select Profession"]
+            </div>
+          [/cred_show_group]
+            </div>
+            <div>
+            [cred_show_group if="( $(mother-profession-type) eq 'Government' )" mode="fade-slide"]
+              <div class="form-group">
+                <label>Profession (Government) <span class="make-required">*</span></label>
+                [cred_field field='mothers-profession-government' force_type='field' class='form-control' output='bootstrap' placeholder="Select Profession"]
+              </div>
+              [/cred_show_group]
+            </div>          
+        </div>
+        </div>
+        <div class="fifth">
+      <div class="form-group">
+        [cred_show_group if="( $(mother-profession-type) eq 'Private' ) OR ( $(mother-profession-type) eq 'Government' )" mode="fade-slide"]
+        <label>Company Name <span class="make-required">*</span></label>
+        [cred_field field='mother-company-name' force_type='field' class='form-control' output='bootstrap' placeholder="Company Name"]
+      [/cred_show_group]
+     </div>
+      
+        </div>
+      </div>
+
+
+    </section>
+    <h3>Guardian's Details</h3>
+    <section>
+       <h2>3. Guardian's Details</h2>
+      <div class="section-group">
+        <div class="sixth">
+          <div class="form-group">
+            [cred_field field='has-guardian-other-than-parent' force_type='field' class='form-control' output='bootstrap']
+          </div>
+        </div>
+        [cred_show_group if="( $(has-guardian-other-than-parent) eq '1' )" mode="fade-slide"]
+        <div class="first">
+           <div class="form-group">
+              <label>First Name <span class="make-required">*</span></label>
+              [cred_field field='guardian-first-name' force_type='field' class='form-control' output='bootstrap' placeholder="First Name"] 
+            </div>
+            <div class="form-group">
+              <label>Middle Name</label>
+              [cred_field field='guardian-middle-name' force_type='field' class='form-control' output='bootstrap' placeholder="Middle Name"]
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              [cred_field field='guardian-last-name' force_type='field' class='form-control' output='bootstrap' placeholder="Last Name"]
+            </div>
+        </div>
+        
+        <div class="second">
+          <div class="form-group">
+            <label>Email ID <span class="make-required">*</span></label>
+            [cred_field field='guardian-email' force_type='field' class='form-control' output='bootstrap' placeholder="Email ID"]
+          </div>
+          <div class="form-group">
+            <label>Mobile Number <span class="make-required">*</span></label>
+            [cred_field field='guardian-mobile-number' force_type='field' class='form-control' output='bootstrap' placeholder="Mobile Name"]
+          </div>
+        </div>
+      <div class="third">
+       <div class="form-group">
+          <label>Education <span class="make-required">*</span></label>
+          [cred_field field='guardian-education' force_type='field' class='form-control' output='bootstrap' placeholder="Education"]
+        </div>
+        <div>
+         <div class="form-group">
+            <label>Profession Type <span class="make-required">*</span></label>
+            [cred_field field='guardian-profession-typee' force_type='field' class='form-control' output='bootstrap' placeholder="Select Profession Type"]
+          </div>[/cred_show_group]
+        </div>
+        
+      </div>
+        
+       <div class="fourth">
+         <div>
+          [cred_show_group if="( $(guardian-profession-typee) eq 'Government' )" mode="fade-slide"]
+            <div class="form-group">
+              <label>Profession (Government) <span class="make-required">*</span></label>
+              [cred_field field='guardian-profession-government' force_type='field' class='form-control' output='bootstrap' placeholder="Select Profession"] 
+            </div>[/cred_show_group]
+            [cred_show_group if="( $(guardian-profession-typee) eq 'Private' )" mode="fade-slide"]
+            <div class="form-group">
+              <label>Profession (Private) <span class="make-required">*</span></label>
+              [cred_field field='guardian-profession-private' force_type='field' class='form-control' output='bootstrap' placeholder="Select Profession"]
+            </div>[/cred_show_group]
+         </div>
+         <div>      
+        [cred_show_group if="( $(guardian-profession-typee) eq 'Private' ) OR ( $(guardian-profession-typee) eq 'Government' )" mode="fade-slide"]
+        <div class="form-group">
+          <label>Company Name <span class="make-required">*</span></label>
+          [cred_field field='guardian-company-name' force_type='field' class='form-control' output='bootstrap' placeholder="Company Name"]
+        </div>[/cred_show_group]
+         </div>
+       </div>
+      </div>
+    </section>
+  <h3>Residential Address</h3>
+  <section>
+    
+     <h2>4. Residential Address</h2>
+      <div class="section-group">
+          <div class="form-group">
+              <label>No of children in family <span class="make-required">*</span></label>
+              [cred_field field='no-of-children-in-family' force_type='field' class='form-control' output='bootstrap' placeholder="No. of Children in Family"]
+            </div>
+            <div class="form-group">
+              <label>Landmark <span class="make-required">*</span></label>
+              [cred_field field='landmark' force_type='field' class='form-control' output='bootstrap' placeholder="Landmark"]
+            </div>
+    	<div class="second">
+        <div class="form-group">
+            <label>Address <span class="make-required">*</span></label>
+            [cred_field field='address-line-raw' force_type='field' class='form-control' output='bootstrap' placeholder="Address"]
+          </div>
+          <div class="form-group">
+            <label>City <span class="make-required">*</span></label>
+            [cred_field field='city-raw' force_type='field' class='form-control' output='bootstrap' placeholder="City"]
+          </div>
+        </div>
+        <div class="third">
+           <div class="form-group">
+              <label>State <span class="make-required">*</span></label>
+              [cred_field field='state' force_type='field' class='form-control' output='bootstrap' placeholder="State"]
+            </div>
+            <div class="form-group">
+              <label>Country <span class="make-required">*</span></label>
+              [cred_field field='country-raw' force_type='field' class='form-control' output='bootstrap' placeholder="Country"]
+            </div>
+        </div>
+      </div>
+  </section>
+</div>
+</div>
+[cred_field field='form_submit' output='bootstrap' value='Submit' class='btn btn-primary btn-lg']
+
+
+[/credform]
